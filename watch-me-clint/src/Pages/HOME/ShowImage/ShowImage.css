@@ -1,0 +1,154 @@
+.image_grid {
+    width:100% ;
+    position: relative;
+}
+.image_grid > img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: zoom-in;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(90%);
+}
+
+.image_grid2 > img {
+    min-width: 100%;
+    height: 300px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(90%);
+}
+
+.photo_owner_details {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    visibility: hidden;
+}
+
+.image_grid:hover .photo_owner_details{
+    visibility: visible;
+    transition: 2s;
+    cursor: pointer;
+}
+
+
+.image_grid:hover>  .post-img{
+    /* opacity: .7; */
+    filter: brightness(50%);
+    transition: .5s;
+}
+
+.photo_owner_details > img {
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.photo_owner_details > h5 {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.photo_icon_container{
+    bottom: 30px;
+    display: flex;
+}
+
+
+
+.photo_icon_container > span{
+    background-color: #eee;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.image_grid:hover .photo_icon_container>span{
+    visibility: visible;
+}
+
+.photo_icon_container > .love-icon {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.photo_icon_container> .user-like {
+    background-color: red;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.photo_icon_container > .add-collection-icon{
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+
+.photo_icon_container > .download-icon{
+    position: absolute;
+    bottom: 30px;
+    right: 7px;
+}
+
+.photo_icon_container > span:hover{
+    background-color: rgba(221, 221, 221, 0.61);
+    transition: .5s;
+}
+
+
+@media (max-width: 668px){
+
+    .photo_owner_details {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+        visibility: visible;
+    }
+
+    .image_grid2 {
+        overflow: hidden;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .image_grid2 > img {
+        width: 100%;
+        height: 300px;
+        vertical-align: middle;
+        display: inline-block;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        object-fit: cover;
+        position: relative;
+        filter: brightness(90%);
+    }
+
+    .photo_icon_container > span{
+        background-color: #eee;
+        padding: 8px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        visibility: visible;
+    }
+}

@@ -1,0 +1,340 @@
+.search_section_container{
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    position: fixed;
+    z-index: 1111;
+    top: 0;
+}
+
+.search_section_wrap {
+    display: flex;
+    width: 98%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.logo_search_input_box_wrap{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advertise_blog_watchME_profile_wrap{
+    width: 40%;
+}
+
+.logo_image_wrap{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* filter: opacity(50%); */
+    filter: brightness(0.15);
+}
+
+
+.search_box_wrap> input {
+    outline: 0;
+    border: 1px solid #ddd;
+    width: 600px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: rgb(255, 252, 252);
+    font-size: 14px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: 500;
+    color: black;
+}
+
+.search_box_wrap{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search_box_wrap > span {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+.advertise_blog_watchME_profile_wrap > nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.advertise_blog_watchME_profile_wrap > nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.advertise_blog_watchME_profile_wrap> nav  ul > li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.advertise_blog_watchME_profile_wrap > nav > ul li >a{
+    text-decoration: none;
+    color: #333;
+}
+
+.profile_image{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.profile_image > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.submit_image_btn> button {
+    border: 1px solid #ddd;
+    padding: 7px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 85%;
+    right: 10%;
+    width: 300px;
+    z-index: 111;
+}
+
+.sub_menu{
+    background-color: #eee;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.user_info > h3 {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.user_info > img {
+    width: 30px;
+    border-radius:50% ;
+    margin-right: 35px;
+}
+
+.sub_menu > hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background :#ccc;
+    margin: 15px 0 10px;
+}
+
+
+.sub-menu-link {
+     display: flex;
+     align-items: center;
+     text-decoration: none;
+     color: #525252;
+     margin: 12px 0;
+}
+
+.sub-menu-link  > p {
+    width: 100%;
+    font-size: 12px;
+    color: #333;
+}
+
+.sub-menu-link > img {
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding:  8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link > span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+.zoom-icon{
+    cursor: pointer;
+}
+
+@media (max-width: 992px){
+ .search_section_container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+ }
+ .search_section_wrap {
+    width: 95%;
+ }
+
+ .logo_search_input_box_wrap{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.advertise_blog_watchME_profile_wrap{
+    width: 30%;
+}
+
+.logo_image_wrap{
+    width: 60px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    filter: brightness(0.15);
+}
+
+.search_box_wrap> input {
+    outline: 0;
+    border: 1px solid #ddd;
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: rgb(255, 252, 252);
+    font-size: 14px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: 500;
+    color: black;
+}
+}
+
+
+
+
+
+@media (max-width: 668px){
+    .search_section_container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow: visible;
+     }
+
+     .search_section_wrap {
+        width: 95%;
+        margin: 0 auto;
+     }
+
+     .logo_search_input_box_wrap{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .advertise_blog_watchME_profile_wrap{
+        width: 20%;
+    }
+
+    .logo_image_wrap > img{
+        width: 80px;
+        height: auto;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        filter: brightness(0.35);
+    }
+    
+    .search_box_wrap> input {
+        outline: 0;
+        border: 1px solid #ddd;
+        width: 250px;
+        height: 40px;
+        border-radius: 30px;
+        padding: 10px 20px;
+        background-color: rgb(255, 252, 252);
+        font-size: 9px;
+        font-family: cursive;
+        font-style: italic;
+        font-weight: 500;
+        color: black;
+        margin-left: 15px;
+    }
+
+    .advertise_blog_watchME_profile_wrap > nav > ul  {
+        display: none;
+    }
+
+    .submit_image_btn> button {
+        display: none;
+    }
+
+    .sub-menu-wrap{
+        position: absolute;
+        top: 80%;
+        right: 10%;
+        width: 250px;
+    }
+
+    .sub-menu-link  > p {
+        width: 100%;
+        font-size: 10px;
+        color: #333;
+    }
+    
+    .sub-menu-link > img {
+        width: 30px;
+        background: #e5e5e5;
+        border-radius: 50%;
+        padding:  8px;
+        margin-right: 15px;
+    }
+    
+    .sub-menu-link > span{
+        font-size: 15px;
+        transition: transform 0.5s;
+    }
+
+
+}

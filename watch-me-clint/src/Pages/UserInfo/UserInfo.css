@@ -1,0 +1,76 @@
+.userInfo_banner_section{
+    margin-top: 50px;
+    background-image: url('https://source.unsplash.com/1600x900/?nature,photography,technology');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.userInfo_header_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.userInfo_header_wrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -20px;
+}
+
+.userInfo_header_wrap > img {
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userInfo_header_wrap > h3{
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: cursive;
+}
+
+.userInfo_created_saved_btn_wrap{
+    margin-top: 15px;
+}
+
+.userInfo_created_saved_btn_wrap > button{
+    border: 0;
+    outline: 0;
+    padding: 7px 20px;
+    margin-right: 10px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.active_btn{
+    background-color: rgb(210, 32, 32);
+    color: white;
+}
+
+.saved_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.saved_wrap > h3{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.userInfo_photo_container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 668px){
+    .userInfo_banner_section {
+        height: 200px;
+    }
+}

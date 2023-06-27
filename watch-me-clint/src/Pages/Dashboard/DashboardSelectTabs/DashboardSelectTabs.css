@@ -1,0 +1,15 @@
+.tabs_section{
+    position: relative;
+    top: 200px;
+    width: 90%;
+    margin: 10px auto;
+} 
+
+@media (max-width: 668px){
+    .tabs_section{
+        position: relative;
+        top: 270px;
+        width: 90%;
+        margin: 10px auto;
+    }
+}

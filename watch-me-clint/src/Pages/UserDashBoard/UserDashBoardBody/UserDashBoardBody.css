@@ -1,0 +1,113 @@
+.userDashboard_section_container{
+    margin-top: 60px;
+}
+
+.userDashboard_header_banner > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-position: center;
+}
+
+.userDashboard_info_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.userDashboard_info_wrap > img{
+    border-radius: 50%;
+    object-fit: contain;
+    width: 65px
+}
+
+.userDashboard_info_wrap > h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+.userDashboard_container_wrap{
+    width: 90%;
+    margin: 0px auto;
+}
+
+.userDashboard_image_upload_info_wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.box {
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #00c689;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: cursive;
+}
+
+.imageCollection {
+    background-color: #3da5f4;
+}
+
+.savedImage {
+    background-color: #f1536e;
+}
+
+.totalView {
+    background-color: #fda006;
+}
+
+.box > h4{
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+}
+.box > h5{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.image_show_collection_container{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.image_show_select_option_wrap{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.select-option-dashboard {
+    border: 0;
+    outline: 0;
+    border: 1px solid rgb(198, 180, 180);
+    cursor: pointer;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.select-option-dashboard > option{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 668px){
+    .userDashboard_image_upload_info_wrap{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        gap: 10px;
+        margin-top: 30px;
+    }
+}
